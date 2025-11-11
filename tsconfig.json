@@ -1,0 +1,13 @@
+{
+    "compilerOptions": {
+        "target": "es6",
+        "module": "commonjs",
+        "strict": true,
+        "noImplicitAny": true,
+        "esModuleInterop": true,
+        "outDir": "./dist",
+        "lib": ["es6", "dom"],
+        "types": ["chrome"]
+    },
+    "include": ["src/**/*.ts"]
+}
