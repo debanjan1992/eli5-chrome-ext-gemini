@@ -57,8 +57,31 @@ The `eli5-chrome-ext-gemini` extension is designed to simplify complex text by p
    - Use this API key in the extension options page to configure the extension.
 
 ## How to Install the Extension Locally
-Since the extension is not yet available in the Chrome Web Store, you can install it locally in developer mode by following these steps:
+### Option 1: Use Prebuilt Extension
+1. **Download the Prebuilt Extension**:
+   - [Download extension-eli5.zip](assets/extension-eli5.zip).
 
+2. **Extract the ZIP File**:
+   - Extract the contents of the `extension-eli5.zip` file to a folder on your computer.
+
+3. **Open Chrome Extensions Page**:
+   - Open Google Chrome and navigate to `chrome://extensions/`.
+
+4. **Enable Developer Mode**:
+   - In the top-right corner of the Extensions page, toggle the "Developer mode" switch to enable it.
+
+5. **Load Unpacked Extension**:
+   - Click on the "Load unpacked" button.
+   - Select the folder where you extracted the ZIP file.
+
+6. **Verify Installation**:
+   - The extension should now appear in the list of installed extensions.
+   - You can pin it to the toolbar for easy access.
+
+7. **Set Up API Key**:
+   - Follow the instructions in the "How to Use" section to configure your API key.
+
+### Option 2: Build the Extension Yourself
 1. **Clone or Download the Repository**:
    - Clone this repository to your local machine or download it as a ZIP file and extract it.
 
