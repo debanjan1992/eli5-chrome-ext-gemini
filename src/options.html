@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Settings</title>
+    <style>
+      body {
+        font-family: "Roboto", Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f1f3f4;
+        color: #202124;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .container {
+        background: #ffffff;
+        border: 1px solid #dadce0;
+        border-radius: 12px;
+        box-shadow: 0 1px 3px rgba(60, 64, 67, 0.3),
+          0 4px 8px rgba(60, 64, 67, 0.15);
+        padding: 24px;
+        width: 100%;
+        max-width: 500px;
+        height: 100%;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+      }
+      h1 {
+        font-size: 1.8rem;
+        margin-bottom: 20px;
+        color: #1a73e8;
+      }
+      label {
+        font-size: 1rem;
+        color: #5f6368;
+        display: block;
+        text-align: left;
+        margin-bottom: 8px;
+      }
+      input[type="text"] {
+        width: 100%;
+        padding: 12px;
+        box-sizing: border-box;
+        margin-bottom: 20px;
+        border: 1px solid #dadce0;
+        border-radius: 8px;
+        font-size: 1rem;
+        color: #202124;
+        outline: none;
+        transition: border-color 0.2s ease, box-shadow 0.2s ease;
+      }
+      input[type="text"]:focus {
+        border-color: #1a73e8;
+        box-shadow: 0 0 0 3px rgba(26, 115, 232, 0.2);
+      }
+      button {
+        background-color: #1a73e8;
+        color: #ffffff;
+        border: none;
+        padding: 12px 16px;
+        border-radius: 24px;
+        font-size: 1rem;
+        cursor: pointer;
+        transition: background-color 0.3s ease, box-shadow 0.2s ease;
+      }
+      button:hover {
+        background-color: #1669c1;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+      }
+      button:disabled {
+        pointer-events: none;
+        background-color: #5f6368;
+        opacity: 0.5;
+      }
+      .status-message {
+        margin-top: 16px;
+        font-size: 1rem;
+        display: none;
+      }
+      .status-message.success {
+        color: #34a853;
+      }
+      .status-message.error {
+        color: #ff0000;
+      }
+      p {
+        font-size: 1rem;
+        color: #5f6368;
+        margin-top: 20px;
+      }
+      a {
+        color: #1a73e8;
+        text-decoration: none;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>ELI5 Settings</h1>
+      <label for="apikey">Gemini API Key</label>
+      <input type="text" id="apiKey" name="apikey" required />
+      <button id="save-btn" disabled>Save Settings</button>
+      <p class="status-message" id="status-message"></p>
+      <p>
+        Need help?
+        <a href="https://aistudio.google.com/api-keys" target="_blank"
+          >Learn how to create a Gemini API key</a
+        >.
+      </p>
+    </div>
+    <script src="options.js"></script>
+  </body>
+</html>
