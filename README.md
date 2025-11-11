@@ -56,6 +56,37 @@ The `eli5-chrome-ext-gemini` extension is designed to simplify complex text by p
 6. **Save the API Key**:
    - Use this API key in the extension options page to configure the extension.
 
+## How to Install the Extension Locally
+Since the extension is not yet available in the Chrome Web Store, you can install it locally in developer mode by following these steps:
+
+1. **Clone or Download the Repository**:
+   - Clone this repository to your local machine or download it as a ZIP file and extract it.
+
+2. **Build the Extension**:
+   - Open a terminal in the project directory.
+   - Run the following command to build the extension:
+     ```bash
+     npm run build
+     ```
+   - This will generate the production-ready files in the `dist` directory.
+
+3. **Open Chrome Extensions Page**:
+   - Open Google Chrome and navigate to `chrome://extensions/`.
+
+4. **Enable Developer Mode**:
+   - In the top-right corner of the Extensions page, toggle the "Developer mode" switch to enable it.
+
+5. **Load Unpacked Extension**:
+   - Click on the "Load unpacked" button.
+   - Select the `dist` directory where the built files are located.
+
+6. **Verify Installation**:
+   - The extension should now appear in the list of installed extensions.
+   - You can pin it to the toolbar for easy access.
+
+7. **Set Up API Key**:
+   - Follow the instructions in the "How to Use" section to configure your API key.
+
 ## Notes
 - Ensure you have a valid API key for the generative language model.
 - The extension requires permissions to access the selected text and display the explanation box.
