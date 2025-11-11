@@ -1,9 +1,9 @@
 # eli5-chrome-ext-gemini
 
-Explain like I'm 5 Chrome Extension
+ELI5 - Explain like I'm 5 Chrome Extension (Powered by Gemini)
 
 ## Overview
-The `eli5-chrome-ext-gemini` extension is designed to simplify complex text by providing easy-to-understand explanations. With just a few clicks, you can get a concise and clear explanation of any selected text on a webpage, making it perfect for students, researchers, or anyone looking to understand complex topics quickly.
+This extension is designed to simplify complex text by providing easy-to-understand explanations. With just a few clicks, you can get a concise and clear explanation of any selected text on a webpage, making it perfect for students, researchers, or anyone looking to understand complex topics quickly.
 
 ## Features
 - **Context Menu Integration**: Right-click on any selected text and choose "Explain Like I'm 5" to get an explanation.
